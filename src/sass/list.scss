@@ -1,0 +1,40 @@
+// 引入变量
+@import 'var';
+
+
+/*
+	继承
+		* extend
+		* 占位符 %
+ */
+
+// 无实际样式
+// 不会被编译出来
+%pop{
+	width:600px;height:300px;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)
+}
+
+.box{
+	width:$container;
+	color:$mainColor;
+	padding:$padding;
+	background-color:#fff;
+	border:1px soild $mainColor;
+}
+
+
+.container{
+	@extend .box;
+	margin:10px;
+}
+
+.popover{
+	@extend %pop;
+	width:400px;
+	height:200px;
+}
+
+.login{
+	@extend %pop;
+	background-color:$mainColor*2;
+}

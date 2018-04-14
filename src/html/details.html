@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>详情页</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/header.css" />
+     <link rel="stylesheet" type="text/css" href="../css/footer.css" />
+     <link rel="stylesheet" type="text/css" href="../css/details.css" />
+     <link rel="stylesheet" type="text/css" href="../lib/jquery/jquery.gdsZoom/jquery.gdsZoom.css" />
+   
+    
+    <!-- <script src="../js/common.js" type="text/javascript"></script>
+      <script src="../lib/jquery/jquery-3.2.1.js"></script>
+    <script src="../js/details.js" type="text/javascript"></script>
+    <script src="../lib/jquery/jquery-addShopping.js" type="text/javascript"></script>
+    <script src="../lib/jquery/jquery.gdsZoom/jquery.gdsZoom.js" type="text/javascript"></script> -->
+ 
+   
+    <!-- <script type="text/javascript">
+    // 头部尾部
+        jQuery(function($){
+
+                 $('#header').load('common_html/headertwo.html');
+                 $('#footer').load('common_html/footertwo.html');
+
+            });
+    </script> -->
+
+     <script src="../js/require.js" type="text/javascript" data-main="../js/details.js"></script>
+</head>
+<body>
+    <div id="header"></div>
+    <!-- 详情页 -->
+    <div class="details">
+     <!-- 固定样式 -->
+        <div class="fixation newslist">
+        
+            <ul>
+             <div class="hint"></div>
+                <li title="购物袋" class="jump">
+                    <span class="menu-a"><span id="num" class="num">0</span></span>
+                    <img src="../lib/svg/gouwu.svg"  />
+                    <div class="goodsCart" ></div>
+                </li>
+                <li title="在线咨询">
+
+                    <img src="../lib/svg/xinxi.svg"  />
+                </li>
+                <li title="400-006-1777">
+                    <img src="../lib/svg/dianhua.svg"  />
+                </li>
+                <li title="手机下载">
+                    <img src="../lib/svg/shouji.svg"  />
+                </li>
+                <li title="返回顶部" id="toTop">
+                    <img src="../lib/svg/top.svg"  />
+                </li>
+                
+            </ul>
+        </div>
+        <div class="cont">
+        <!-- 详情页上部分 -->
+            <div class="details-t">
+                <h5>海外购首页 > 海外美妆 > 护肤 > NIVEA 德国妮维雅焕彩魔法慕斯洁面泡沫 海外本土原版</h5>
+             <!-- 详情页上部分的左边 -->
+                <div class="details-tl">
+                    <div class="details-tll">
+                    <!-- <div class="prev">
+                        <img src="../img/galleryup.png" class="galleryup" />
+                    </div> -->
+                        <ul id="loopPic" class="smallList">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                       <!-- <div class="next">
+                            <img src="../img/gallerydown.png" class="gallerydown" />
+                        </div>  -->  
+                    <div class="details-tlr">
+                    <div id="pics" class="details3"></div>
+                         
+                          <img src="../img/details21.png" class="details21" />
+                          
+                    </div>  
+                </div>
+
+                <!-- 详情页上部分的右边 -->
+                <div class="details-tr">
+                    <div class="neirong">
+                         <p class="centent" id="centent"></p>
+                        <p class="shangxin">国际妈咪海外仓空运直发  每天10点上新  全球特卖原价畅享</p>
+                        <img src="../img/star5.png" alt="" />
+                    </div>
+                    <p class="mamijia">妈咪价：<span id="oPrice"></span> <span class="shichangjia"> 商场价：<del>￥110.40</del></span></p>
+                    <img src="../img/details18.png" alt="" />
+                    <div class="dinggou">
+                        <div class="aa">最低订购：</div>
+                        <div class="qty">  
+                            <button class="minus">-</button>
+                            <input type="text" id="quantity"class="shuliang" value="1"/>
+                            <button class="add">+</button>
+                        </div>
+                        <div class="bb cargo"></div>
+                    </div>
+                    <img src="../img/details20.png" class="carts"  id="addcar"/>
+                    <img src="../img/details19.png" alt="" />
+
+
+                   
+
+
+                </div>
+            </div>
+            <!-- 详情页下部分 -->
+            <div class="details-b">
+                <!-- 详情页下部分的左边 -->
+                <div class="details-bl">
+                     <h5>
+                            <img src="../img/henggang.png" class="henggang" />
+                            热门推荐 Hot Sale
+                            <img src="../img/henggang.png" class="henggang" />
+                        </h5>
+                        <div id="goodslist2" class="goodslist2"></div>
+                         <h5>
+                                <img src="../img/henggang.png" class="henggang" />
+                                精彩口碑 Wonderful
+                                <img src="../img/henggang.png" class="henggang" />
+                        </h5>
+                        <div class="wonderful">
+                            <img src="../img/details10.png" alt="" />
+                        </div>
+                        <h5>
+                            <img src="../img/henggang.png" class="henggang" />
+                            浏览历史 History
+                            <img src="../img/henggang.png" class="henggang" />
+                        </h5>
+                        <div id="goodslist3" class="goodslist2">
+                            
+                        </div>
+
+                        
+                            
+                </div>
+                <!-- 详情页下部分的右边 -->
+
+                <div class="details-br">
+                    <div class="tab">
+                        <header>
+                            <div>INFORMATION 产品信息</div>
+                            <div>MAIL 直邮方式</div>
+                            <div>GUARANTEE 官方保障</div>
+                            <div style="border-right=none;">FAQ 常见问题</div>
+                          
+                        </header>
+                        <div class="content">
+                            <div class="content1">
+                                <img src="../img/details14.png">
+                                <div class="consult">
+                                    <div class="sousuo">
+                                        <h5>咨询前请先搜索</h5>
+                                        <input type="text" />
+                                        <button>搜索</button>
+                                    </div>
+                                    <div class="tishi">
+                                        温馨提示：因海外商品更新等情况，且每位咨询者购买情况、提问时间等不同，为此以下回复仅对提问者3天内有效，其他网友仅供参考!若由此给您带来不便请多多谅解!
+                                    </div>
+                                </div>
+                                <div class="quiz">
+                                    <h5>用户对商品包装、颜色、运输、库存等方面如有有疑问，可以留言咨询，我们有专人进行回复，咨询回复的工作时间为：周一至周日，8:30至21:00，请耐心等待工作人员回复。回复仅对提问者3天内有效，其他网友仅供参考!</h5><br />
+                                     <textarea id="textarea"></textarea><br />
+                                     <button id="btn">提交</button>
+                                </div>
+                            </div>
+                            <div class="content2">
+                                <img src="../img/details16.png">
+
+                            </div>
+                            <div class="content3">
+                                <img src="../img/details15.png">
+                             </div>
+                            <div class="content4">
+                                <img src="../img/details16.png">
+                                
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+</body>
+</html>

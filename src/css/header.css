@@ -1,0 +1,83 @@
+.header{position:relative;height: 164px;}
+.header .cont{height: 164px;background-color: #fff;}
+/*头部：登录注册行，搜索行，导航条*/
+.header .head-t{height: 30px;width: 1202px;}
+.header .head-tl{float: left;}
+.header .com{font-size: 14px;margin-left: 300px;line-height: 30px;}
+.header .head-tr{float: right;}
+.header .head-tr ul li{float: left;padding-left: 14px;}
+.header .head-tr ul li span{font-size: 14px;color:#666666;line-height: 30px;padding-right: 20px;}
+
+/*搜索行*/
+ .head-c{height: 90px;width: 1140px;}
+ .head-cl img{width: 400px;height: 90px;float: left;}
+ .head-cc ul li{float: left;padding-left: 10px;} .head-cc ul li span{font-size: 14px;color:#000;line-height: 90px;padding-right: 10px;}
+
+ .head-cr{margin-left: 40px;float: right;}
+ .head-crt ul li{float: left;padding-left: 10px;}
+ .head-crt ul li span{font-size: 12px;color:#ccc;line-height: 30px;padding-right: 10px;}
+
+ .head-crb input{width: 277px;height: 30px;border:2px solid #CA1C1C;}
+ .head-crb .biankuang{position:absolute;width:40px;height:34px;background-color:#CA1C1C;}
+ /*字体图标*/
+ .font{width: 20px;height: 20px;}
+
+/*导航条*/
+ .head-b{height: 42px;border-top: 1px solid #ccc;border-bottom:1px solid #ccc;background-color: #F8F8F8;}
+ .head-b .cont{height: 42px;}
+.head-b ul li{float: left;padding-left: 10px;}
+ .head-b ul li span{font-size: 12px;color:#000;line-height: 42px;padding-right: 10px;}
+ .head-b ul li:hover span{color:#E19619;}
+
+
+/*二级导航*/
+.milk-power{width: 1202px;background-color: #fff;position:absolute;top:164px;left: 90px;z-index:2000;display: none;}
+ .erji:hover .milk-power{display: block;}
+
+.milk-power h4{font-size: 12px;font-weight: bold;padding-top: 20px;}
+.milk-power h5{font-size: 10px;color:#ccc;margin-top: 20px;}
+.milk-power a{font-size: 10px;color:#000;line-height: 10px;}
+
+.mpl{width: 220px;height: 430px;float: left;padding-left: 20px;border-right:1px solid #ccc;}
+.mpc{width: 430px;height: 430px;float: left;padding-left: 20px;border-right:1px solid #ccc;}
+.mpr{width: 430px;height: 430px;float: right;padding-left: 20px;float: left;}
+.mpr img{width: 200px;height: 300px;float: right;margin-top: -250px;}
+.shiyong{margin-top: 20px;}
+
+/*更新headerone*/
+.head-cc{
+    float: left;
+}
+.zhuce{
+    width: 186px;
+    height: 90px;
+    
+}
+.logo{
+    width: 445px;
+    height: 90px;
+    float: left;
+}
+.head-rr{
+    width: 538px;
+    height: 90px;
+    float: right;
+    margin-top: 30px;
+}
+
+.head-rr ul li{
+    float: left;
+    margin-right: 10px;
+    width: 168px;
+    height: 90px;
+}
+.head-rr h6{
+    font-size: 14px;
+}
+.head-rr span{
+    font-size: 12px;
+    color:#ccc;
+}
+.head-rr img{
+    float: left;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>注册</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/header.css" />
+     <link rel="stylesheet" type="text/css" href="../css/footer.css" />
+     <link rel="stylesheet" type="text/css" href="../css/register.css" />
+     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+
+    <!-- <script src="../js/common.js" type="text/javascript"></script>
+      <script src="../lib/jquery/jquery-3.2.1.js"></script>
+    <script src="../js/register.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+    // 头部尾部
+        jQuery(function($){
+
+                 $('#header').load('common_html/headerone.html');
+                 $('#footer').load('common_html/footerone.html');
+
+            });
+    </script> -->
+     <script src="../js/require.js" type="text/javascript" data-main="../js/register.js"></script>
+</head>
+<body>
+    <div id="header"></div>
+    <div class="register">
+        <div class="cont">
+            <div class="register-l">
+                <img src="../img/login1.png" alt="" />
+            </div>
+            <div class="register-r">
+                <h5> 注册Register<span>已有账号，现在去<a  href="login.html" class="hong">登陆</a></span></h5>
+                <form action="#">
+                    <div class="form-group">
+                        <label for="username" class="label2">用户名：</label>
+                        <input type="text" name="username" id="username" class="form-control" placeholder="用户名开头为字母，长度在6-20之间" >
+                        <div class="help-block"></div>
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="label2">密码：</label>
+                        <input type="password" name="password" id="password" class="form-control">
+                        <div class="res1"></div>
+                    </div>
+                    <div class="form-group">
+                       <label class="label2">确认密码:</label>
+                        <input id="confirm_pwd" type="password" class="form-control" />
+                        <div class="res2"></div>
+                    </div>
+                    <div class="form-group">
+                       <label class="label2">手机号码:</label>
+                        <input id="phone" type="text" class="form-control" 
+                        placeholder="输入正确的手机号码"/><br />
+                    </div>
+                    <div class="form-group">
+                         <label for="vCode" >验证码:</label>
+                        <input type="text" id="mCode" class="code"
+                       />
+                         <span id="sCode" class="code1">1234</span>
+                         <div class="res3"></div>
+                    </div>
+                  
+                   <button id="btnReg" class="btn">确定提交</button><br />
+                   <input type="checkbox" class="checkbox" id="checkbox"/><h6><span>我已阅读并接受<a  href="#" class="hong">《国际妈咪服务条款》</a></span></h6>
+                    <div class="res4"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
