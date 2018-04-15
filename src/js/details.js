@@ -1,8 +1,30 @@
-require(['config'],function(){
-    require(['jquery','common'],function($){ 
+require.config({
+  // 配置别名（虚拟路径）
+  paths:{
+    // 格式：别名:真实路径（基于baseUrl）
+    jquery:'../lib/jquery/jquery-3.2.1',
+    zoom:'../lib/jquery/jquery.gdsZoom/jquery.gdsZoom',
+    addShopping:'../lib/jquery/jquery-addShopping'
+
+   
+  },
+
+  // 配置依赖
+  shim:{
+    common:['jquery'],
+    zoom:['jquery'],
+    addShopping:['jquery']
+
+  }
+ })
+
+require(['jquery','common','zoom','addShopping'],function($){
          
         $('#header').load('common_html/headertwo.html');
          $('#footer').load('common_html/footertwo.html');
+  // document.addEventListener('DOMContentLoaded',function(){
+
+    
 
       //固定样式中提示部分
      var newslist = document.querySelector('.newslist');
@@ -427,4 +449,4 @@ require(['config'],function(){
 
    });  
 
-});
+// });

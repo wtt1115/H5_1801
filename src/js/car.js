@@ -1,6 +1,18 @@
-require(['config'],function(){
-    require(['jquery','common'],function($){
+require.config({
+  // 配置别名（虚拟路径）
+  paths:{
+    // 格式：别名:真实路径（基于baseUrl）
+    jquery:'../lib/jquery/jquery-3.2.1',
+    
+  },
 
+  // 配置依赖
+  shim:{
+    common:['jquery']
+  }
+ })
+
+require(['jquery','common'],function($){
          $('#header').load('common_html/headerone.html');
          $('#footer').load('common_html/footerone.html')
     //获取元素
@@ -21,7 +33,7 @@ require(['config'],function(){
                 goodlist=JSON.parse(arr[1]);
             }
         });
-         console.log(goodlist);
+         // console.log(goodlist);
         return goodlist ;
     }
      read();
@@ -73,9 +85,9 @@ require(['config'],function(){
                     break;
                 }
             }
-            console.log(i)
+            // console.log(i)
             // //重新写入cookie
-            // Cookie.set('goodlist',JSON.stringify(goodlist)+';path=/');
+            Cookie.set('goodlist',JSON.stringify(goodlist)+';path=/');
             //刷新界面
              read();
             return false;
@@ -103,7 +115,7 @@ require(['config'],function(){
        if(target.className == 'minus'){
             //获取到当前li
             var currentLi = target.parentNode.parentNode.parentNode;
-            console.log(currentLi);
+            // console.log(currentLi);
             var guid = currentLi.getAttribute('data-guid');
             
             for(var j = 0;j<goodlist.length;j++){
@@ -184,4 +196,4 @@ require(['config'],function(){
             }
    });         
     
-});
+

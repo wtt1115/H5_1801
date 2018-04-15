@@ -156,16 +156,33 @@
   height: 64px;
   width: 188px;
   border: 1px solid #ddd;
-  margin-left: 20px;
-  margin-right: 8px;
+  margin-left: 10px;
+  margin-right:10px;
   margin-top: 10px;
+
 }
 .trademark a{
-  
-  font-size: 12px;
+  color: #535353;
+  margin-left: 40px;
   line-height: 60px;
-  margin-left: 68px;
-  color:#535353;
+}
+.hover1 a{
+ margin-left: 80px;
+}
+.trademark dd:hover{
+  border:1px solid #fc0;
+}
+ .hover1:hover {
+  background-image:url('../img/a2_logo.png');
+}
+ dd:hover span{
+  display: none;
+}
+  .hover2:hover, .hover3:hover {
+  background:url('../img/aptamil_logo.png') ;
+}
+ .hover4:hover {
+  background:url('../img/babybio_logo.png') ;
 }
 .trademark h6{
   
@@ -178,7 +195,7 @@
   
   position:absolute;
   top: 100px;
-  right: 65px;
+  right: 80px;
 }
 .mold{
   height: 53px;
@@ -204,7 +221,7 @@
   color:#535353;
 }
 .addoption{
-  position:absolute;
+  position:relative;
   height: 50px;
    border-bottom:1px solid #ddd ;
 
@@ -229,24 +246,46 @@
   color:#535353;
 }
 .addoption .xiajiantouone{
-  width: 16px;
-  height: 16px;
+  width: 10px;
+  height: 10px;
   float: right;
+  margin-top: 6px;
 }
-
+.change{
+  font-size: 10px;
+  color:#535353;
+  margin-left: 10px;
+  margin-top: 6px;
+}
 .select .stage{
   width: 80px;
   height: 26px;
   border:1px solid #ddd ;
+  margin-left: 10px;
+  
+
+ 
 }
 .select .allocate{
   width: 80px;
   height: 26px;
   border:1px solid #ddd ;
+  margin-left: 10px;
+
+  
 }
 .select .option{
   background-color: #fff;
+  border:1px solid #ccc;
+   z-index: 1;  
+   position:absolute;
+   margin-left: 10px;
+   display: none;
+   width: 600px;
+   height: 200px;
+
 }
+
 .list-rb{
   width: 947px;
 

@@ -1,9 +1,25 @@
-require(['config'],function(){
-    require(['jquery','common'],function($){      
-    
-             $('#header').load('html/header.html');
-             $('#footer').load('html/footer.html');
-       
+
+
+require.config({
+  // 配置别名（虚拟路径）
+  paths:{
+    // 格式：别名:真实路径（基于baseUrl）
+    jquery:'../lib/jquery/jquery-3.2.1',
+    carousel:'../lib/jquery/carousel'
+  },
+
+  // 配置依赖
+  shim:{
+    carousel:['jquery']
+  }
+ })
+
+require(['jquery','carousel'],function($){
+
+ 
+      $('#header').load('html/header.html');
+      $('#footer').load('html/footer.html');
+
         
         // 大的轮播图
          var oWrap=document.getElementById('wrap')
@@ -195,8 +211,8 @@ require(['config'],function(){
         var  countDown3= document.getElementById('countDown3');
        // 设置结束时间
               var end = '2018-4-30 20:57:33'; 
-              var end1 = '2018-4-20 18:00:33';
-              var end2 = '2018-4-18 09:00:00';
+              var end1 = '2018-5-6 18:00:33';
+              var end2 = '2018-5-15 09:00:00';
               var end3 = '2018-4-26 10:00:00';   
         doajishi();
          function doajishi(){
@@ -477,10 +493,10 @@ $(function(){
     });
 
 
-  
+  // }
 
-  });   
-});
+ });   
+
 
   
                         
