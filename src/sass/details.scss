@@ -1,4 +1,3 @@
-@charset "UTF-8";
 #header {
   position: relative;
 }
@@ -8,26 +7,25 @@
 }
 
 /*固定样式*/
+
 .fixation {
   position: absolute;
   right: 0;
   top: 360px;
   float: left;
   position: fixed;
-}
-
-.fixation img {
-  width: 20px;
-  height: 20px;
-  margin: 4px 6px;
-}
-
-.fixation li {
-  width: 36px;
-  height: 36px;
-  border: 1px solid #ddd;
-  background-color: #FAFAFA;
-  margin-bottom: 30px;
+  img {
+    width: 20px;
+    height: 20px;
+    margin: 4px 6px;
+  }
+  li {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #ddd;
+    background-color: #FAFAFA;
+    margin-bottom: 30px;
+  }
 }
 
 .num {
@@ -58,42 +56,44 @@
   text-align: center;
 }
 
-.details .cont {
-  height: 100%;
+.details {
+  .cont {
+    height: 100%;
+  }
+  .details-t {
+    height: 670px;
+    margin-bottom: 65px;
+    margin-top: 16px;
+  }
 }
 
-.details .details-t {
-  height: 670px;
-  margin-bottom: 65px;
-  margin-top: 16px;
+.details-t {
+  .details-tl {
+    width: 562px;
+    height: 670px;
+    float: left;
+  }
+  .details-tr {
+    width: 615px;
+    height: 670px;
+    float: right;
+  }
 }
 
-.details-t .details-tl {
-  width: 562px;
-  height: 670px;
-  float: left;
-}
-
-.details-t .details-tr {
-  width: 615px;
-  height: 670px;
-  float: right;
-}
-
-.details .details-b {
-  height: 4768px;
-}
-
-.details .details-bl {
-  height: 100%;
-  width: 238px;
-  float: left;
-}
-
-.details .details-br {
-  width: 944px;
-  height: 100%;
-  float: right;
+.details {
+  .details-b {
+    height: 4768px;
+  }
+  .details-bl {
+    height: 100%;
+    width: 238px;
+    float: left;
+  }
+  .details-br {
+    width: 944px;
+    height: 100%;
+    float: right;
+  }
 }
 
 .details-t h5 {
@@ -113,16 +113,15 @@
 }
 
 .details-bl {
+  h5 {
+    font-size: 10px;
+    background-color: #FAFAFA;
+    border: 1px solid #ddd;
+    padding: 14px;
+    margin-top: 24px;
+    margin-left: 3px;
+  }
   width: 234px;
-}
-
-.details-bl h5 {
-  font-size: 10px;
-  background-color: #FAFAFA;
-  border: 1px solid #ddd;
-  padding: 14px;
-  margin-top: 24px;
-  margin-left: 3px;
 }
 
 .henggang {
@@ -136,48 +135,44 @@
   border: 1px solid #ddd;
 }
 
-.details-bl li {
-  height: 240px;
-  width: 238px;
-}
-
-.details-bl .content {
-  font-size: 12px;
-  color: #535353;
-  margin-left: 6px;
-}
-
-.details-bl .price {
-  font-size: 10px;
-  color: #D1A36A;
-  margin-left: 20px;
-}
-
-.details-bl .alibi {
-  font-size: 10px;
-  color: #969696;
-}
-
-.details-bl .goodslist1 img {
-  width: 100px;
-  height: 136px;
-  margin-left: 60px;
-  margin-bottom: 6px;
-  margin-top: 6px;
-}
-
-.details-bl .goodslist2 {
-  height: 1200px;
-  width: 238px;
-  border: 1px solid #ddd;
-}
-
-.details-bl .goodslist2 img {
-  width: 100px;
-  height: 136px;
-  margin-left: 60px;
-  margin-bottom: 6px;
-  margin-top: 6px;
+.details-bl {
+  li {
+    height: 240px;
+    width: 238px;
+  }
+  .content {
+    font-size: 12px;
+    color: #535353;
+    margin-left: 6px;
+  }
+  .price {
+    font-size: 10px;
+    color: #D1A36A;
+    margin-left: 20px;
+  }
+  .alibi {
+    font-size: 10px;
+    color: #969696;
+  }
+  .goodslist1 img {
+    width: 100px;
+    height: 136px;
+    margin-left: 60px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+  }
+  .goodslist2 {
+    height: 1200px;
+    width: 238px;
+    border: 1px solid #ddd;
+    img {
+      width: 100px;
+      height: 136px;
+      margin-left: 60px;
+      margin-bottom: 6px;
+      margin-top: 6px;
+    }
+  }
 }
 
 .empty {
@@ -188,26 +183,23 @@
 .tab {
   padding: 2px;
   width: 944px;
-}
-
-.tab header {
-  padding-bottom: 2px;
-  overflow: hidden;
-  background-color: #ccc;
-}
-
-.tab header div {
-  float: left;
-  margin-left: 6px;
-  padding-right: 20px;
-  padding: 16px;
-  margin-right: 20px;
-}
-
-.tab .active {
-  background-color: #fff;
-  color: red;
-  border: 2px solid red;
+  header {
+    padding-bottom: 2px;
+    overflow: hidden;
+    background-color: #ccc;
+    div {
+      float: left;
+      margin-left: 6px;
+      padding-right: 20px;
+      padding: 16px;
+      margin-right: 20px;
+    }
+  }
+  .active {
+    background-color: #fff;
+    color: red;
+    border: 2px solid red;
+  }
 }
 
 .consult {
@@ -215,23 +207,20 @@
   padding: 10px 10px;
   border: 1px solid #ddd;
   margin-top: 10px;
-}
-
-.consult .sousuo {
-  float: left;
-  width: 200px;
-  height: 84px;
-}
-
-.consult .sousuo h5 {
-  font-size: 12px;
-  color: #535353;
-}
-
-.consult .sousuo input {
-  width: 106px;
-  height: 30px;
-  border: 1px solid #ddd;
+  .sousuo {
+    float: left;
+    width: 200px;
+    height: 84px;
+    h5 {
+      font-size: 12px;
+      color: #535353;
+    }
+    input {
+      width: 106px;
+      height: 30px;
+      border: 1px solid #ddd;
+    }
+  }
 }
 
 .content button {
@@ -254,52 +243,50 @@
   height: 192px;
   margin-top: 20px;
   border: 1px solid #ddd;
-}
-
-.quiz h5 {
-  font-size: 10px;
-  color: #959595;
-  margin-top: 6px;
-  margin-left: 10px;
-}
-
-.quiz textarea {
-  width: 440px;
-  height: 80px;
-  margin-bottom: 6px;
-  margin-left: 10px;
+  h5 {
+    font-size: 10px;
+    color: #959595;
+    margin-top: 6px;
+    margin-left: 10px;
+  }
+  textarea {
+    width: 440px;
+    height: 80px;
+    margin-bottom: 6px;
+    margin-left: 10px;
+  }
 }
 
 /*详情页上部分*/
+
 .details-tll ul {
   margin-top: 60px;
-}
-
-.details-tll ul li {
-  width: 62px;
-  height: 62px;
-  margin-left: 20px;
-  margin-bottom: 8px;
-  border: 1px solid #ddd;
-}
-
-.details-tll ul li img {
-  width: 62px;
-  height: 62px;
+  li {
+    width: 62px;
+    height: 62px;
+    margin-left: 20px;
+    margin-bottom: 8px;
+    border: 1px solid #ddd;
+    img {
+      width: 62px;
+      height: 62px;
+    }
+  }
 }
 
 #loopPic .liCover {
   border: 1px solid red;
 }
 
-.details-tlr .details3 {
-  width: 400px;
-  height: 400px;
-  margin-top: 40px;
-}
-
-.details-tlr .details21 {
-  margin-top: 20px;
+.details-tlr {
+  .details3 {
+    width: 400px;
+    height: 400px;
+    margin-top: 40px;
+  }
+  .details21 {
+    margin-top: 20px;
+  }
 }
 
 .galleryup {
@@ -351,20 +338,17 @@
   font-size: 12px;
   display: block;
   margin-left: 1px;
-}
-
-.dinggou div {
-  float: left;
-}
-
-.dinggou button {
-  background-color: #fff;
-  text-align: center;
-  border: 1px solid #ddd;
-}
-
-.dinggou .aa {
-  color: #525252;
+  div {
+    float: left;
+  }
+  button {
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  .aa {
+    color: #525252;
+  }
 }
 
 .minus, .add {

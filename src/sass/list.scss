@@ -1,40 +1,360 @@
-// 引入变量
-@import 'var';
+/*固定样式*/
 
-
-/*
-	继承
-		* extend
-		* 占位符 %
- */
-
-// 无实际样式
-// 不会被编译出来
-%pop{
-	width:600px;height:300px;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)
+.fixation {
+  position: absolute;
+  right: 0;
+  top: 360px;
+  float: left;
+  position: fixed;
+  img {
+    width: 20px;
+    height: 20px;
+    margin: 4px 6px;
+  }
+  li {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #ddd;
+    background-color: #FAFAFA;
+    margin-bottom: 30px;
+  }
 }
 
-.box{
-	width:$container;
-	color:$mainColor;
-	padding:$padding;
-	background-color:#fff;
-	border:1px soild $mainColor;
+.num {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: -12px;
+  background-color: red;
+  color: #fff;
+  text-align: center;
+  font-size: 10px;
 }
 
-
-.container{
-	@extend .box;
-	margin:10px;
+.hint {
+  display: none;
+  position: absolute;
+  margin-left: -140px;
+  margin-top: 10px;
+  color: red;
+  padding: 10px;
+  width: 120px;
+  font-size: 10px;
+  border: 1px solid #FAFAFA;
+  background-color: #FAFAFA;
+  text-align: center;
 }
 
-.popover{
-	@extend %pop;
-	width:400px;
-	height:200px;
+.list {
+  height: 4302px;
+  .cont {
+    height: 4302px;
+  }
 }
 
-.login{
-	@extend %pop;
-	background-color:$mainColor*2;
+.list-l {
+  width: 238px;
+  height: 4302px;
+  float: left;
+}
+
+.list-r {
+  width: 947px;
+  float: right;
+  height: 4302px;
+}
+
+.list-l {
+  h4 {
+    padding: 15px;
+    font-size: 12px;
+  }
+  dl {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+  }
+  dt {
+    font-size: 10px;
+    background-color: #FAFAFA;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 24px;
+    text-align: center;
+  }
+  dd {
+    width: 236px;
+    height: 66px;
+    border-bottom: 1px solid #ddd;
+    line-height: 60px;
+    text-align: left;
+    img {
+      width: 30px;
+      height: 30px;
+      margin-left: 40px;
+    }
+    a {
+      font-size: 12px;
+      color: #535353;
+      margin-left: 6px;
+    }
+  }
+}
+
+.niulan {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.list-l h5 {
+  font-size: 10px;
+  background-color: #FAFAFA;
+  border: 1px solid #ddd;
+  padding: 14px;
+  margin-top: 24px;
+  text-align: center;
+}
+
+.list-lb {
+  .henggang {
+    width: 40px;
+    height: 6px;
+  }
+  img {
+    width: 120px;
+    height: 150px;
+    margin-left: 40px;
+  }
+  .price {
+    font-size: 10px;
+    color: #D1A36A;
+    margin-left: 20px;
+  }
+}
+
+.list-rt h4 {
+  font-size: 10px;
+  background-color: #FAFAFA;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-top: 68px;
+}
+
+.trademark {
+  height: 134px;
+  border: 1px solid #ddd;
+  position: relative;
+  dt {
+    font-size: 10px;
+    padding: 10px;
+    float: left;
+  }
+  dd {
+    float: left;
+    height: 64px;
+    width: 188px;
+    border: 1px solid #ddd;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  a {
+    color: #535353;
+    margin-left: 40px;
+    line-height: 60px;
+  }
+}
+
+.hover1 a {
+  margin-left: 80px;
+}
+
+.trademark dd:hover {
+  border: 1px solid #fc0;
+}
+
+.hover1:hover {
+  background-image: url('../img/a2_logo.png');
+}
+
+dd:hover span {
+  display: none;
+}
+
+.hover2:hover, .hover3:hover {
+  background: url('../img/aptamil_logo.png');
+}
+
+.hover4:hover {
+  background: url('../img/babybio_logo.png');
+}
+
+.trademark {
+  h6 {
+    float: right;
+    margin-right: 10px;
+  }
+  .add {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 100px;
+    right: 80px;
+  }
+}
+
+.mold {
+  height: 53px;
+  border-bottom: 1px solid #ddd;
+  dt {
+    font-size: 10px;
+    padding: 10px;
+    float: left;
+  }
+  dd {
+    float: left;
+    margin-left: 20px;
+    margin-right: 8px;
+    margin-top: 10px;
+  }
+  a {
+    font-size: 12px;
+    line-height: 40px;
+    margin-left: 68px;
+    color: #535353;
+  }
+}
+
+.addoption {
+  position: relative;
+  height: 50px;
+  border-bottom: 1px solid #ddd;
+  dt {
+    font-size: 10px;
+    padding: 10px;
+    float: left;
+  }
+  dd {
+    float: left;
+    margin-left: 20px;
+    margin-right: 8px;
+    margin-top: 10px;
+  }
+  a {
+    font-size: 12px;
+    line-height: 40px;
+    margin-left: 68px;
+    color: #535353;
+  }
+  .xiajiantouone {
+    width: 10px;
+    height: 10px;
+    float: right;
+    margin-top: 6px;
+  }
+}
+
+.change {
+  font-size: 10px;
+  color: #535353;
+  margin-left: 10px;
+  margin-top: 6px;
+}
+
+.select {
+  .stage, .allocate {
+    width: 80px;
+    height: 26px;
+    border: 1px solid #ddd;
+    margin-left: 10px;
+  }
+  .option {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 1;
+    position: absolute;
+    margin-left: 10px;
+    display: none;
+    width: 600px;
+    height: 200px;
+  }
+}
+
+.list-rb {
+  width: 947px;
+  h4 {
+    font-size: 10px;
+    background-color: #FAFAFA;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 68px;
+  }
+}
+
+.h4-l ul li {
+  float: left;
+  margin-left: 4px;
+  margin-right: 10px;
+}
+
+.h4-r {
+  float: right;
+  ul li {
+    float: left;
+    margin-right: 8px;
+  }
+}
+
+.list-produce {}
+
+.goodslist2 {
+  li {
+    height: 400px;
+    width: 294px;
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-top: 60px;
+  }
+  img {
+    width: 240px;
+    height: 262px;
+    margin-left: 20px;
+  }
+  .imgthree {
+    width: 40px;
+    height: 20px;
+    float: right;
+  }
+  .content {
+    font-size: 12px;
+    color: #535353;
+    margin-left: 6px;
+    margin-top: 10px;
+  }
+  .price {
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  p {
+    margin-top: 10px;
+  }
+}
+
+#page span {
+  display: inline-block;
+  margin: 5px;
+  width: 40px;
+  line-height: 1.8;
+  text-align: center;
+  background-color: #535353;
+  color: #fff;
+  &.background {
+    background-color: #fc0;
+    color: #fff;
+  }
 }
